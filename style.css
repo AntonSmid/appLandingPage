@@ -1,9 +1,15 @@
 /*Add a cover background picture for the featured part with a fixed height*/
 
 .jumbotron {
-    background: url(img/bgimg-166.jpg) center center;
-    background-size: cover;
-    height: 100vh; /* 600px; */
+     background: url(img/bgimg-166.jpg) center center;
+     background-size: cover;
+    
+/*    -- lahko tudi tako -- samo ne drzi razmerja
+    background: url(img/bgimg-166.jpg);
+    background-size: 100% 100%;
+*/
+    
+    height: 600px; /* ; 100vh*/
 }
 
 
@@ -11,5 +17,110 @@
 .logo {
     width: 75px;
     height: 75px;
+    
+}
+
+/* featured section */
+.featured {
+    color: #fff;
+}
+
+.featured h1 {
+    padding-top: 60px;
+}
+
+/*style links*/
+.featured .btn-default {
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(145, 82, 58, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 200px;
+    margin-right: 15px;
+}
+
+.featured .btn-default:hover {
+    background-color: rgba(145, 82, 58, 0.9);
+} 
+
+.trial {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: black;
+}
+
+.trial img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+}
+
+/* footer styling*/
+
+.footer {
+  background-color: #eee;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+
+/* for devices between 480px and 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;;
+    }
+    
+    .featured h1 {
+    padding-top: 30px;
+}
+    .featured p {
+        font-size: 17px;
+    }
+    
+    .featured {
+        text-align: center;
+    }
+    
+}
+
+/* for devices under 480px */
+@media (max-width: 479px) {
+    .jumbotron {
+        height: 410px;
+        margin: 0;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;;
+    }
+    
+    .featured h1 {
+    padding-top: 10px;
+}
+    .featured p, .featured a{
+        font-size: 15px;
+    }
+    
+    .featured .btn-default {
+        margin-top: 10px;
+    }
+    
+    .featured {
+        text-align: center;
+    }
+    
+    .trial img {
+    width: 180px;
+    height: auto;
+    margin: 10px;
+}
     
 }
