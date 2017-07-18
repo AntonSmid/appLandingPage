@@ -1,0 +1,15 @@
+/*Add a cover background picture for the featured part with a fixed height*/
+
+.jumbotron {
+    background: url(img/bgimg-166.jpg) center center;
+    background-size: cover;
+    height: 100vh; /* 600px; */
+}
+
+
+/*set size of the logo*/
+.logo {
+    width: 75px;
+    height: 75px;
+    
+}
